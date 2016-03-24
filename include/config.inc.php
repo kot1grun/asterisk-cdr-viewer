@@ -31,7 +31,11 @@ $system_tmp_dir = '/tmp';
 
 /* audio file format */
 $system_audio_format = 'wav';
-/* arch audio format bz2 || gz, uncomment it if you pack files after some time */
+/* arch audio format bz2 || gz, uncomment it if you pack files after some time
+But remember, this is not efective to use archiever for compressing media files
+It's better to use some lossy codec like Ogg Vorbis
+So $system_arch_audio_format = 'ogg' is better.
+*/
 /* 
 $system_arch_audio_format = 'bz2';
 */
